@@ -1,0 +1,90 @@
+:root {
+  --menuColor: rgba(10, 4, 60, 1.0);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 2rem;
+  line-height: 2;
+  display: flex;
+  
+  margin: 0;
+  min-height: 100vh;
+}
+
+
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--menuColor); 
+    width: 100%;
+    border-radius: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.name {
+    cursor: default;
+    font-size: 100px;
+    font-family: cursive;
+    color: snow;
+    letter-spacing: 10px;
+    font-weight: 70;
+    margin-top: 0;
+}
+
+.loading {
+    cursor: default;
+    font-size: 50px;
+    font-family: cursive;
+    color: white;
+    letter-spacing: 6px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+#score {
+    position: absolute;
+    color: red;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    width: 100%;
+    text-align: left;
+    z-index: 100;
+    display:block;
+}
+
+#time {
+    position: absolute;
+    color: red;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    width: 100%;
+    text-align: left;
+    z-index: 100;
+    display:block;
+}
+
+#game-over {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    height:200px;
+    width:250px;
+    text-align: center;
+}
